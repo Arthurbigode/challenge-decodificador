@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="header__logo" src="imagens/Frame 6.png" alt="Logo Alura">
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="left">
+                <textarea id="leftTexto" class="left__texto" placeholder="Digite seu texto"></textarea>
+                <div class="left__footer">
+                    <img class="left__footerlogo" src="imagens/Group.png" alt="Alerta logo">
+                    <span class="left__footertexto">Apenas letras minúsculas e sem acento.</span>
+                    <div class="left__botoes">
+                        <button onclick="criptografarTexto()" id="botaoCriptografar" class="left__botao__criptografar">Criptografar</button>
+                        <button onclick="descriptografarTexto()" id="botaoDescriptografar" class="left__botao__descriptografar">Descriptografar</button>
+                    </div>
+                </div>
+            </div>
+            <div id="right" class="right">
+                <img id="rightImagem" class="right__imagem" src="imagens/High quality products 1 1.png" alt="">
+                <!-- <div class="right__texto"></div> -->
+                <textarea id="rightTextoCima" class="right__texto__cima" >Nenhuma mensagem encontrada</textarea>
+                <p id="rightBaixo" class="right__texto__baixo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button onclick="copy()" id="botaoCopiar" class="right__botao oculto">Copiar</button>
+                
+            </div>
+        </div>
+    </main>
+    
+    <!--<footer></footer>-->
+    <script src="script.js" defer></script>
+</body>
+</html>

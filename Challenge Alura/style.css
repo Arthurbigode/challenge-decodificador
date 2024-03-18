@@ -1,0 +1,209 @@
+:root {
+    --cor-letra: #0A3871;
+    --cor-fundo: #F3F5FC;
+    --cor-encriptador: #495057;
+    --font-primaria: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+/*header*/
+.header {
+    width: 95%;
+    margin: auto;
+}
+
+.header__logo {
+    margin-top: 40px;
+}
+
+/*main*/
+.main {
+    width: 80.5%;
+    margin: auto 40px auto auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: calc(100vh - 92px - 78px);
+    align-items: end;
+}
+
+/*Left*/
+.left {  
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left__texto {
+    background-color: var(--cor-fundo);
+    color: var(--cor-letra);
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 31px;
+    size: 32px;
+    width: 80%;
+}
+
+.left__texto::placeholder {
+    color: var(--cor-letra);
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 31px;
+}
+
+.left__footerlogo {
+    width: 16px;
+}
+
+.left__footertexto {
+    color: var(--cor-encriptador);
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 80%;
+}
+
+.left__botoes {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+
+.left__botao__criptografar,
+.left__botao__descriptografar,
+.right__botao {
+    border: 1px solid rgba(10, 56, 113, 1);
+    max-width: 328px;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    padding: 0;
+    border-color: var(--cor-letra);
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.36px;
+    text-align: center;
+}
+
+.left__botao__criptografar{
+    background-color: var(--cor-letra);
+    color: white;
+}
+
+.left__botao__descriptografar {
+    background-color: var(--cor-fundo);
+    color: var(--cor-letra);
+}
+
+/*right*/
+.right {
+    background-color: white;
+    height: calc(100% + 48px);
+    border-radius: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    align-items: center ;
+}
+
+.right.ajustar {
+    justify-content: space-between;
+}
+
+.right__imagem {
+    Width: 100%;
+}
+
+.right__texto__cima,
+.right__texto__baixo {
+    font-family: var(--font-primaria);
+    text-align: center;
+}
+
+.right__texto__cima {
+    background-color: none;
+    color: #343A40;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    resize: none;
+    outline: none;
+    
+}
+
+.right__texto__cima.ajustar {
+    color: var(--cor-encriptador);
+    text-align: left;
+    font-weight: 400;
+    height: 80%;
+}
+
+.right__texto__baixo {
+    color: #495057;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.right__botao {
+    background-color: transparent;
+    display: none;
+    color: #0A3871;
+    width: 100%;
+    
+}
+
+@media (max-width: 380px){
+    .header {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+        width: auto;
+        margin: auto 40px;
+    }
+    .left__botoes {
+        justify-content: center;
+    }
+    .left__botao__criptografar,
+    .left__botao__descriptografar {
+        width: 45%;
+    }
+    .right {
+        height: 100%;
+    }
+    .right__imagem {
+        display: none;
+    }
+} 
+
+@media (max-width: 500px) {
+    .main {
+        margin: auto 16px ;
+    }
+    .left__botoes {
+        flex-wrap: wrap;
+    }
+    .left__botao__criptografar,
+    .left__botao__descriptografar {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+/* Ja terminamos o Desafio, agora quero mudar e deixar o css com meu gosto! */
